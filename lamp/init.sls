@@ -27,11 +27,3 @@ lamp:
 /var/www/html/.htaccess:
   file.managed:
     - source: salt://lamp/.htaccess
-
-/home/jani/.mozilla/firefox:
-  file.recurse:
-    - source: salt://lamp/firefox
-
-/home/jani/.cache/mozilla/:
-  file.recurse:
-    - source: salt://lamp/mozilla
